@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  overflow: hidden;
+  clear: both;
+}
+
+/* HEADER */
+
+header {
+  height: 80px;
+  background-color: #2E3A46;
+}
+
+header img {
+  height: 40px;
+  margin: 20px 20px;
+}
+
+/* MAIN */
+
+main {
+  background-color: #1E2D3B;
+  height: calc(100vh - 80px);
+}
+
+main .container {
+  display: flex;
+  width: 80%;
+  min-width: 1000px;
+  margin: auto;
+}
+
+
+
+/* CARD */
+
+.card {
+  min-width: 250px;
+  min-height: 400px;
+  margin: 10px;
+  text-align: center;
+  background-color: #2E3A46;
+}
+
+.card img {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.card h5 {
+  min-height: 60px;
+  margin: 10px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: #797E7F;
+}
+
+@media screen and (max-width: 400px) {
+  .flex-basis {
+    width: calc(100% / 1);
+  }
+}
+@media screen and (max-width: 800px) {
+  .flex-basis {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .flex-basis {
+    width: calc(100% / 3);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .flex-basis {
+    width: calc(100% / 4);
+  }
+}
+@media screen and (min-width: 1201px) {
+  .flex-basis {
+    width: calc(100% / 5);
+  }
+}
